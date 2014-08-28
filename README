@@ -1,0 +1,41 @@
+Sample code for Thinking Outside The Framework, 2 September 2014
+
+***********************************
+** Warning: This code is rather  **
+** suboptimal.  Do not use it    **
+** anything you expect to finish **
+** running within your lifetime. **
+***********************************
+
+This month's challenge is based on typos.  In my version of reality,
+you've been contacted by a kickstarter project called "air-k&m" that's
+developed a virtual keyboard and mouse driven by a device's camera.
+Just point your smart phone or hipster pad's camera at a surface, draw
+a rectangle on it with your finger, and then start typing as if there
+were a qwerty keyboard there.  The software watches your fingers and
+techno-magically produces keystrokes as if you had an attached
+keyboard.  The mouse works analogously.
+
+The project was successfully funded and even hit two of their stretch
+goals, so they will be shipping two additional features: a laminated
+card with a picture of a keyboard (for the hunt and peckers), and a
+virtual button across the typo that does typo correction.
+
+The typo correction works by finding and suggesting the closest
+word(s) in its built in dictionary.  In this context, "closest" is
+defined in terms of edit distance--the smallest number of additions,
+deletions, or substitutions needed to convert one word to the other.
+
+The code was easy to write (they bagged the algorithm from wikipedia
+and transcoded it into ruby in under five minutes) and seems to work
+correctly, but it's (*ahem*) a tad slow.
+
+
+
+--------------------------------------------------------------------
+The included dictionary, american-english, is provided under licence
+(I'm not quite clear which one) from someone (I'm not quite clear who).
+See american-english-copyright for details.
+
+I'm tempted to make parsing that document next month's challenge, but
+I'll refrain.
