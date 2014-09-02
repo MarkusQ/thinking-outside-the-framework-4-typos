@@ -1,0 +1,1 @@
+for f in typo[3-9].rb; do echo $f; time ruby $f 2>&1; done | tee typo_stats.$(date  +'%F@%R')
